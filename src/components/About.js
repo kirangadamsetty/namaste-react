@@ -23,10 +23,7 @@ class About extends React.Component{
       user : jsonData
       
     })
-    this.timer = setInterval(()=>{
-      console.log("Namaste Kiran")
-    }, 1000)
-    // console.log("ComponentDidMount")
+  
   }
 
   componentDidUpdate(prevProps , prevState){
@@ -38,9 +35,7 @@ class About extends React.Component{
         //  console.log("ComponentDidUpdate")
   }
 
-  componentWillUnmount(){
-    clearInterval(this.timer)
-  }
+ 
 
   render(){    
     const {user} = this.state
